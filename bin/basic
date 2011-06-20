@@ -1,0 +1,11 @@
+#! /usr/bin/env ruby
+
+# Remember to make this file executable:
+# chmod +x bin/basic
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'basic'
+
+# TODO add command line app stuff here
+app = Basic::Service.new
+app.start
