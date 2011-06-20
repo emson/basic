@@ -1,0 +1,11 @@
+# Basic: A boilerplate Ruby app
+
+Welcome, Basic is simply a boilerplate Ruby app. It contains everything you need to get up and running with your own Ruby app.
+
+RSpec and Cucumber are the testing frameworks of choice, and can all be run from Rake or from the commandline.
+
+    bundle exec rake spec
+    bundle exec rake cucumber
+    
+Enjoy...
+
