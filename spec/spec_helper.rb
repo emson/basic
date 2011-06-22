@@ -1,13 +1,10 @@
 require "rubygems"
-require "bundler/setup"
 require "rspec"
 require "rspec/core"
 require 'rspec/core/rake_task'
 
-# ENV["RAILS_ENV"] ||= 'test'
-
-Dir.glob("lib/**/*.rb").each do |f|
-  require File.expand_path(f)
+Dir.glob("lib/**/*.rb").each do |file|
+  require File.expand_path(file)
 end
 
 

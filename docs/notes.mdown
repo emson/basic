@@ -1,26 +1,23 @@
 #Simple Ruby Project with Testing
 
-This document describes how to set up a simple Ruby project with all the infrastructure.
+This document describes how this simple boilerplate Ruby app is structured.
 It focusses on using the following **gems**:
 
-1. Rake
-2. Bundler
-3. Cucumber
-4. RSpec
-[5. Thor]
-
-##TODO
-
-Cucumber rake
-README file
-Gem Spec file
+* Bundler
+* Rake
+* Cucumber
+* RSpec
 
 
-##Project structure
+##Running tests
 
+One of the prerequisites was that the tests should be able to run from both the native `cucumber` and `rspec` commands as well as the rake task version. In order to get Cucumber to work within Rake the **cucumber-rails** gem generated codes was used and modified to work with this app.
 
+###Cucumber configuration
 
-##RSpec
+Cucumber uses a configuration file located in **config/cucumber.yml**. This file contains various cucumber profiles depending on how you want it to run. 
+
+###RSpec configuration
 
 Note that the RSpec options are set in a **.rspec** file.
 This file can be in your home directory e.g.   **~/.rspec** or your local application directory e.g. **my_app/.rspec**.

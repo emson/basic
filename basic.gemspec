@@ -19,9 +19,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_development_dependency "cucumber"
 
-  # Man files are required because they are ignored by git
-  man_files            = Dir.glob("lib/bundler/man/**/*")
-  s.files              = `git ls-files`.split("\n") + man_files
   s.test_files         = `git ls-files -- {spec,features}/*`.split("\n")
   s.executables        = %w(basic)
   s.require_paths      = ["lib"]
