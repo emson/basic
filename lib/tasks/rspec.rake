@@ -7,5 +7,3 @@ task :spec do
     t.pattern = "./spec/**/*_spec.rb"
   end
 end
-
-# https://github.com/rspec/rspec-core/commit/8a5486ac1f0c13fdbbb64ac4bcd9529c21743e35

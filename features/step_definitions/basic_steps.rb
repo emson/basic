@@ -1,13 +1,28 @@
+# Create a testable output object
+class Output
+  def messages
+    @messages ||= []
+  end
 
-
-Given /^I have initialised the basic app$/ do
-  pending # express the regexp above with the code you wish you had
+  def puts(message)
+    messages << message
+  end
 end
 
-When /^I do something$/ do
-  pending # express the regexp above with the code you wish you had
+def output
+  @output ||= Output.new
 end
 
-Then /^I should see "([^"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+
+
+Given /^I have not started the app$/ do
+end
+
+When /^I start the app$/ do
+  app = Basic::App.new(output)
+  app.start
+end
+
+Then /^I should see "([^"]*)"$/ do |message|
+  output.messages.should include(message)
 end

@@ -1,9 +1,10 @@
-Feature: Run a basic app
-  In order to run the basic app
-  a user
-  must run the command
+Feature: User starts basic app
+	
+	As a user
+	I want to start the app
+	So that I can see the message
   
-  Scenario: Run a basic app
-    Given I have initialised the basic app
-    When I do something
-    Then I should see "success"
+  Scenario: Start app
+    Given I have not started the app
+    When I start the app
+    Then I should see "Success welcome to the basic app"

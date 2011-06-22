@@ -7,5 +7,5 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'basic'
 
 # TODO add command line app stuff here
-app = Basic::Service.new
+app = Basic::App.new
 app.start
